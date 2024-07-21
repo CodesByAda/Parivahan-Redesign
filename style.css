@@ -1,0 +1,317 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+}
+
+header {
+    max-width: 1920px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    position: fixed;
+    z-index: 10000;
+}
+
+.title {
+    width: 95%;
+    min-height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.titleimgleft img {
+    width: 150px;
+}
+
+.titleimgright img {
+    width: 120px;
+}
+
+.titletext {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    border-top: 2px solid black;
+    box-shadow: 0 3px 2px 0;
+}
+
+.navitems {
+    padding: 0;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlinks {
+    width: 75%;
+    
+}
+
+.navlinks a {
+    text-decoration:  none;
+    color: black;
+    font-size: 20px;
+    padding: 25px 25px 25px 0;
+}
+
+.navspecials {
+    display: flex;
+    align-items: center;
+    
+}
+
+.search {
+    width: 100%;
+}
+
+.search input {
+   width: 250px;
+   height: 30px;
+   border: none;
+   background-color: grey;
+   border-radius: 5px;
+   outline: none;
+   padding-left: 15px;
+}
+
+.login button {
+    width: 80px;
+    height: 30px;
+    margin-left: 15px;
+    border-radius: 5px;
+    background-color: blue;
+}
+
+main {
+    position: relative;
+    height: 1000px;
+    background-color: red;
+    top: 150px;
+}
+
+section {
+    height: 1000px;
+    background-color: yellow;
+}
+
+
+/* 
+
+.fullpage {
+    width: 100%;
+    height: 100%;
+}
+
+
+main {
+    height: 100%;
+    width: 100%;
+}
+
+.navbar {
+    background-color: white;
+    position: fixed;
+    height: 130px;
+    width: 100%;
+    box-shadow: 0 4px 8px 0;
+}
+
+.headnav {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: solid 2px black;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+}
+
+.logo {
+    width: 150px;
+}
+
+.logo img {
+    width: 150px
+}
+
+.navheader {
+    text-align: center;
+    text-transform: uppercase;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navheader h2 {
+    font-size: 30px;
+}
+
+
+.logo2 {
+    width: 120px;
+}
+
+.logo2 img{
+    width: 100px;
+}
+
+/*subnav*/
+/*
+.subnav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+}
+*/
+
+/* scrolling banner*/
+/*
+.scroll-banner {
+    padding-top: 130px;
+    width: auto;
+    height: auto;
+}
+
+.scroll-banner div {
+    height: auto;
+    width: auto;
+}
+
+.scroll-banner div img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+
+/* Section 2 */
+/*
+.item-list {
+    height: 100%;
+    width: 100%;
+}
+
+.license, .vehicle, .manufacturer, .others, .dashboard, .public, .informational  {
+    height: 600px;
+    width: 100%;
+}
+
+.license, .manufacturer, .dashboard, .informational {
+    background-color: rgba(235, 245, 255, 1);
+}
+
+.vehicle, .others, .public {
+    background-color: rgb(213, 234, 254);
+}
+
+.textbox {
+    padding-top: 2%;
+    text-align: center;
+}
+
+.textbox h2 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+.textbox p {
+    font-size: 17px;
+    margin: auto;
+    width: 70%;
+}
+*/
+
+/* starting of cards */
+/*
+.cards-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 88%;
+    gap: .1rem;
+    margin: auto;
+}
+
+.card {
+    border: solid 1px rgb(160, 160, 160);
+    background-color: white;
+    margin: auto;
+    height: 22rem;
+    border-radius: 15px;
+    width: 300px;
+    transition: .5s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px 0;
+}
+
+.cardimg {
+    margin: auto;
+    margin-top: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 88%;
+}
+
+.cardimg img {
+    padding: auto;
+    align-items: center;
+    height: 100%;
+}
+
+.cardtext {
+    text-align: center;
+    margin: auto;
+    margin-top: 3%;
+}
+
+.cardtext h2{
+    font-weight: bolder;
+    margin-top: 0.2rem;
+}
+
+.cardtext p{
+    margin-top: 0.2rem;
+}
+
+.btn {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background-color: #34b6ec;
+    border: solid 2px black;
+    height: 10%;
+    width: 50%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.btn a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+} 
+*/
