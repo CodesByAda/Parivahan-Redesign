@@ -3,16 +3,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(222, 215, 215);
+    width: 100%;
 }
 
 header {
     max-width: 1920px;
     width: 100%;
-    height: auto;
     background-color: white;
-    position: fixed;
-    z-index: 10000;
+    margin: auto;
 }
 
 .title {
@@ -22,7 +25,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .titleimgleft img {
@@ -44,11 +46,11 @@ nav {
     align-items: center;
     min-height: 50px;
     border-top: 2px solid black;
-    box-shadow: 0 3px 2px 0;
+    border-bottom: 2px solid black;
+    text-transform: uppercase;
 }
 
 .navitems {
-    padding: 0;
     width: 95%;
     margin: auto;
     display: flex;
@@ -58,34 +60,28 @@ nav {
 
 .navlinks {
     width: 75%;
-    
 }
 
 .navlinks a {
-    text-decoration:  none;
+    text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-size: 16px;
     padding: 25px 25px 25px 0;
 }
 
 .navspecials {
     display: flex;
     align-items: center;
-    
-}
-
-.search {
-    width: 100%;
 }
 
 .search input {
-   width: 250px;
-   height: 30px;
-   border: none;
-   background-color: grey;
-   border-radius: 5px;
-   outline: none;
-   padding-left: 15px;
+    width: 250px;
+    height: 30px;
+    border: none;
+    background-color: grey;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 15px;
 }
 
 .login button {
@@ -94,224 +90,137 @@ nav {
     margin-left: 15px;
     border-radius: 5px;
     background-color: blue;
+    color: white;
+    border: none;
+}
+
+main, section , footer {
+    max-width: 1920px;
+    width: 100%; 
+    margin: 0 auto;
 }
 
 main {
-    position: relative;
-    height: 1000px;
-    background-color: red;
-    top: 150px;
+    height: auto;
+    background-color: rgb(245, 245, 245);
+}
+
+.heroimg {
+    width: 100%;
+    height: auto;
+    min-height: 340px;
+}
+
+.heroimg img {
+    width: 100%;
+    height: 100%;
+    min-height: 340px;
+    object-fit: stretch;
 }
 
 section {
-    height: 1000px;
-    background-color: yellow;
+    height: auto;
+    background-color: rgb(245, 245, 245);
 }
 
-
-/* 
-
-.fullpage {
+.license,
+.dashboard {
     width: 100%;
-    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: auto;
+    margin: auto;
+    background-color: rgb(245, 245, 245);
 }
 
-
-main {
-    height: 100%;
-    width: 100%;
-}
-
-.navbar {
-    background-color: white;
-    position: fixed;
-    height: 130px;
-    width: 100%;
-    box-shadow: 0 4px 8px 0;
-}
-
-.headnav {
-    display: flex;
-    justify-content: space-evenly;
-    border-bottom: solid 2px black;
-    align-items: center;
-    height: 90px;
-    width: 100%;
-}
-
-.logo {
-    width: 150px;
-}
-
-.logo img {
-    width: 150px
-}
-
-.navheader {
+.textcontent {
+    width: 95%;
+    margin: auto;
+    height: auto;
     text-align: center;
     text-transform: uppercase;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.navheader h2 {
+.textcontent h2 {
     font-size: 30px;
 }
 
-
-.logo2 {
-    width: 120px;
+.textcontent p {
+    padding-top: 5px;
+    font-size: 15px;
 }
 
-.logo2 img{
-    width: 100px;
-}
-
-/*subnav*/
-/*
-.subnav {
+.cardsdiv {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 40px;
-    width: 100%;
-}
-*/
-
-/* scrolling banner*/
-/*
-.scroll-banner {
-    padding-top: 130px;
-    width: auto;
-    height: auto;
-}
-
-.scroll-banner div {
-    height: auto;
-    width: auto;
-}
-
-.scroll-banner div img {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-}
-
-
-/* Section 2 */
-/*
-.item-list {
-    height: 100%;
-    width: 100%;
-}
-
-.license, .vehicle, .manufacturer, .others, .dashboard, .public, .informational  {
-    height: 600px;
-    width: 100%;
-}
-
-.license, .manufacturer, .dashboard, .informational {
-    background-color: rgba(235, 245, 255, 1);
-}
-
-.vehicle, .others, .public {
-    background-color: rgb(213, 234, 254);
-}
-
-.textbox {
-    padding-top: 2%;
-    text-align: center;
-}
-
-.textbox h2 {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 30px;
-}
-
-.textbox p {
-    font-size: 17px;
-    margin: auto;
-    width: 70%;
-}
-*/
-
-/* starting of cards */
-/*
-.cards-section {
-    display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    gap: 1rem;
+    width: 95%;
     height: auto;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    width: 88%;
-    gap: .1rem;
-    margin: auto;
+    margin: 0 auto;
+    
 }
 
 .card {
-    border: solid 1px rgb(160, 160, 160);
-    background-color: white;
-    margin: auto;
-    height: 22rem;
+    margin: 30px 0;
     border-radius: 15px;
-    width: 300px;
-    transition: .5s ease-in-out;
+    box-shadow: 0 5px 8px 0 rgb(71, 68, 68);
+    background-color: white;
+    min-height: 350px;
+    min-width: 300px;
+    max-width: 300px;
 }
 
 .card:hover {
-    box-shadow: 0 4px 8px 0;
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: transform .3s ease;
+    
 }
 
 .cardimg {
-    margin: auto;
-    margin-top: 7%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 150px;
     height: 150px;
-    width: 88%;
+    margin: 30px auto;
 }
 
 .cardimg img {
-    padding: auto;
-    align-items: center;
     height: 100%;
+    width: 100%;
 }
 
-.cardtext {
+.cardtextarea {
     text-align: center;
+    padding: 0 10px 10px 10px;
+    text-transform: uppercase;
+}
+
+.cardtextarea h2 {
+    font-size: 20px
+}
+
+.cardtextarea p {
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+
+.vehicle,
+.infoservices {
+    background-color: rgb(219, 247, 245);
+    padding-top: 30px;
+    width: 100%;
+    height: auto;
     margin: auto;
-    margin-top: 3%;
+    padding-bottom: 30px;
 }
 
-.cardtext h2{
-    font-weight: bolder;
-    margin-top: 0.2rem;
+footer {
+    height: 100px;
+    background-color: rgb(50, 49, 49);
 }
 
-.cardtext p{
-    margin-top: 0.2rem;
+.footercontents {
+    
 }
-
-.btn {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 12px;
-    background-color: #34b6ec;
-    border: solid 2px black;
-    height: 10%;
-    width: 50%;
-    margin: auto;
-    margin-top: 25px;
-}
-
-.btn a {
-    text-align: center;
-    text-decoration: none;
-    color: white;
-} 
-*/
