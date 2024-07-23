@@ -11,7 +11,7 @@
 <body>
     <header>
         <!--TITLE-->
-        <div class="title">
+        <div class="headertitle">
             <div class="titleimgleft">
                 <img src="images/logo-parivahan-sewa.png" alt="home">
             </div>
@@ -44,12 +44,40 @@
             </div>
         </nav>
     </header>
+
+    <!--Banner Images-->
     <main>
         <div class="heroimg">
             <img src="images/banner3.jpg" alt="banner">
         </div>
     </main>
+
+    <!--State selector-->
+    <div class="stateselector hide">
+        <div class="dropdown-container">
+            <div class="optiontitle">
+                <h2>License Menu</h2>
+                <span class="closebtn" id="closeBtn">&Cross;</span>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-button" id="dropdownButton">
+                    Select State <span id="dropdownIcon">&#9660;</span>
+                </button>
+                <div class="dropdown-content" id="dropdownContent">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Search states...">
+                        <span class="search-icon">&#128269;</span>
+                    </div>
+                    <div id="errorMessage" class="error-message">No states found</div>
+                </div>
+            </div>
+            <button id="submitButton" class="submit-button" disabled>Submit</button>
+        </div>
+    </div>
+
+    <!--Webpage Sections-->
     <section class="services">
+        <div class="bluediv"></div>
         <div class="license">
             <div class="textcontent">
                 <h2>License Related Services</h2>
@@ -66,7 +94,7 @@
                         <p>License registration on your fingertips</p>
                     </div>
                     <div class="btndiv">
-                        <button>Know More</button>
+                        <button class="optionBtn">Know More</button>
                     </div>
                 </div>
                 <div class="card">
@@ -78,7 +106,7 @@
                         <p>One place for application of Driving School License</p>
                     </div>
                     <div class="btndiv">
-                        <button>Know More</button>
+                        <button class="optionBtn">Know More</button>
                     </div>
                 </div>
                 <div class="card">
@@ -90,7 +118,7 @@
                         <p>Book / Modify Online test appointments</p>
                     </div>
                     <div class="btndiv">
-                        <button>Know More</button>
+                        <button class="optionBtn">Know More</button>
                     </div>
                 </div>
                 <div class="card">
@@ -102,7 +130,7 @@
                         <p>Explore the plethora of services related to Driving License</p>
                     </div>
                     <div class="btndiv">
-                        <button>Know More</button>
+                        <button class="optionBtn">Know More</button>
                     </div>
                 </div>
             </div>
@@ -124,7 +152,7 @@
                         <p>One click for all the vehicle related citizen services</p>
                     </div>
                     <div class="btndiv">
-                        <button>Know More</button>
+                        <button class="optionBtn">Know More</button>
                     </div>
                 </div>
                 <div class="card">
@@ -136,7 +164,7 @@
                         <p>Your favorite number for your favorite vehicle</p>
                     </div>
                     <div class="btndiv">
-                        <button>Know More</button>
+                        <button class="optionBtn">Know More</button>
                     </div>
                 </div>
                 <div class="card">
@@ -148,7 +176,7 @@
                         <p>Seamless online way for vehicle permits</p>
                     </div>
                     <div class="btndiv">
-                        <button>Know More</button>
+                        <button class="optionBtn">Know More</button>
                     </div>
                 </div>
                 <div class="card">
@@ -160,7 +188,7 @@
                         <p>Explore the services related to your vehicle here</p>
                     </div>
                     <div class="btndiv">
-                        <button>Know More</button>
+                        <button class="optionBtn">Know More</button>
                     </div>
                 </div>
             </div>
@@ -181,7 +209,7 @@
                         <p>National visibility of Vehicle Registration and related services</p>
                     </div>
                     <div class="btndiv">
-                        <button>Know More</button>
+                        <button class="optionBtn">Know More</button>
                     </div>
                 </div>
                 <div class="card">
@@ -193,7 +221,7 @@
                         <p>Tracking of all licenses issuance and Permits</p>
                     </div>
                     <div class="btndiv">
-                        <button>Know More</button>
+                        <button class="optionBtn">Know More</button>
                     </div>
                 </div>
                 <div class="card">
@@ -205,7 +233,7 @@
                         <p>Displaying number of vehicle records nationally</p>
                     </div>
                     <div class="btndiv">
-                        <button>Know More</button>
+                        <button class="optionBtn">Know More</button>
                     </div>
                 </div>
                 <div class="card">
@@ -217,7 +245,7 @@
                         <p>VLTS ecosystem of vehicles for National Tracking</p>
                     </div>
                     <div class="btndiv">
-                        <button>Know More</button>
+                        <button class="optionBtn">Know More</button>
                     </div>
                 </div>
             </div>
@@ -237,7 +265,7 @@
                         <p>Identify basic details with License and Registration Details</p>
                     </div>
                     <div class="btndiv">
-                        <button>Know More</button>
+                        <button class="optionBtn">Know More</button>
                     </div>
                 </div>
                 <div class="card">
@@ -249,7 +277,7 @@
                         <p>A guide to acquaint you to the most frequently used services.</p>
                     </div>
                     <div class="btndiv">
-                        <button>Know More</button>
+                        <button class="optionBtn">Know More</button>
                     </div>
                 </div>
                 <div class="card">
@@ -261,7 +289,7 @@
                         <p>Latest updates from MoRTH, Meity and other related Govt. authorities</p>
                     </div>
                     <div class="btndiv">
-                        <button>Know More</button>
+                        <button class="optionBtn">Know More</button>
                     </div>
                 </div>
                 <div class="card">
@@ -273,12 +301,14 @@
                         <p>Find answer to the most common and frequent questions here</p>
                     </div>
                     <div class="btndiv">
-                        <button>Know More</button>
+                        <button class="optionBtn">Know More</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!--Footer Section-->
     <footer>
         <div class="footercontents">
             <div class="footersection">
@@ -315,13 +345,18 @@
             </div>
         </div>
         <hr>
+        
+        <!--Page Credits-->
         <div class="credits">
             <h2>This is a simple redesign idea for the site named Parivahan.</h2>
             <p>This site has no relation with the original website. Pictures and text used in this site are from the
                 official <a href="https://parivahan.gov.in/parivahan/">parivahan site</a></p>
             <p>This site is <b>Made by Adarsh Antony</b> for Educational purposes <br> &copy;All Rights Reserved</p>
         </div>
+
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -11,11 +11,6 @@ body {
     width: 100%;
 }
 
-button:hover {
-    cursor: pointer;
-    font-size: 14px;
-}
-
 header {
     max-width: 1920px;
     width: 100%;
@@ -23,7 +18,7 @@ header {
     margin: auto;
 }
 
-.title {
+.headertitle {
     width: 95%;
     min-height: 100px;
     margin: auto;
@@ -53,6 +48,7 @@ nav {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     text-transform: uppercase;
+    background-color: rgb(106, 249, 249);
 }
 
 .navitems {
@@ -135,6 +131,177 @@ main {
     object-fit: stretch;
 }
 
+.stateselector {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.753);
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+}
+
+
+.dropdown-container {
+    background-color: white;
+    position: relative;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    box-shadow: 0 5px 5px 0 grey;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.optiontitle{
+    padding: 50px 0 20px 0;
+    text-transform: uppercase;
+}
+
+.optiontitle span {
+    position: absolute;
+    top: 0;
+    right: 2%;
+    font-size: 40px;
+}
+
+.optiontitle span:hover {
+    cursor: pointer;
+    font-size: 45px;
+}
+
+.dropdown {
+    position: relative;
+    width: 300px;
+}
+
+.dropdown-button {
+    width: 300px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 300px;
+    max-height: 150px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.search-container {
+    position: relative;
+    width: 95%;
+    margin: 10px auto;
+}
+
+.dropdown-content input {
+    width: 100%;
+    padding: 15px 40px 10px 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* Custom Scrollbar Styling */
+.dropdown-content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+    cursor: pointer;
+}
+
+.dropdown-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #888;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.error-message {
+    display: none;
+    padding: 10px;
+    color: #d9534f;
+    text-align: center;
+    background-color: #f9d6d5;
+    border: 1px solid #d9534f;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+.submit-button {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: not-allowed;
+    margin-top: 10px;
+}
+
+.submit-button:enabled {
+    cursor: pointer;
+    background-color: blue;
+}
+
+.submit-button:disabled {
+    background-color: #d9534f;
+}
+
 section {
     height: auto;
     background-color: rgb(245, 245, 245);
@@ -148,6 +315,15 @@ section {
     height: auto;
     margin: auto;
     background-color: rgb(245, 245, 245);
+}
+
+.bluediv {
+    background-color: rgb(106, 249, 249);
+    height: 50px;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    position: relative;
+    top: -10px;
 }
 
 .textcontent {
@@ -253,19 +429,15 @@ footer {
     height: auto;
     background-color: rgb(50, 49, 49);
     color: white;
-    padding: 30px 0;
+    padding: 30px;
     display: flex;
     justify-content: center;
-    padding: 50px 50px;
-
 }
 
 .footercontents {
-    padding: 10px 2px;
     width: 95%;
-    margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     text-transform: uppercase;
@@ -273,10 +445,12 @@ footer {
 
 .footersection {
     padding-bottom: 20px;
+    width: 180px;
+    max-width: 180px;
 }
 
 .footersection h3 {
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: underline;
     text-underline-offset: 8px;
     padding-bottom: 15px;
@@ -284,16 +458,16 @@ footer {
 
 .footersection p {
     font-weight: lighter;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .credits {
-    text-align: center;
-    margin-left: 5px;
+    text-align: left;
+    margin-left: 0px;
     min-height: 200px;
     width: 95%;
     border-left: solid 2px white;
-    padding-left: 30px;
+    padding-left: 25px;
     align-content: center;
     text-transform: uppercase;
 }
@@ -315,4 +489,3 @@ footer {
 .credits p:last-child {
     padding-top: 10px;
 }
-
