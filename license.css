@@ -1,0 +1,234 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(222, 215, 215);
+    width: 100%;
+}
+
+header,
+main,
+footer {
+    max-width: 1920px;
+    width: 100%;
+    margin: auto;
+}
+
+header {
+    background-color: white;
+}
+
+.headertitle {
+    width: 95%;
+    min-height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titleimgleft img {
+    width: 150px;
+}
+
+.titleimgright img {
+    width: 120px;
+}
+
+.titletext {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(106, 249, 249);
+    align-items: center;
+    min-height: 50px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    text-transform: uppercase;
+}
+
+.navitems {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlinks {
+    width: 75%;
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 25px 25px 25px 0;
+}
+
+.navlinks a:hover {
+    cursor: pointer;
+    font-size: 17px;
+    color: blue;
+}
+
+.rightnavcontents {
+    display: flex;
+    align-items: center;
+}
+
+.rightnavcontents button {
+    width: 130px;
+    height: 30px;
+    margin-left: 15px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    border: none;
+}
+
+.rightnavcontents button:hover {
+    cursor: pointer;
+}
+
+section {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.dashboard {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    font-size: 12px;
+    width: 150px;
+    min-height: 155px;
+    margin:  20px 0;
+}
+
+.cardimg {
+    width: 80px;
+    margin: auto;
+}
+
+.cardimg img {
+    width: 100%;
+}
+
+.cardimg:hover {
+    animation: bounce 2s infinite ease-in-out;
+    cursor: pointer;
+}
+
+.cardtextarea {
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.cardtextarea h2 {
+    font-size: 12px;
+    text-align: center;
+}
+
+.bluediv{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(106, 249, 249);
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+}
+
+footer {
+    height: auto;
+    background-color: rgb(50, 49, 49);
+    color: white;
+}
+
+.footerdiv {
+    height: auto;
+    background-color: rgb(50, 49, 49);
+    color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footercontents {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+}
+
+.footersection {
+    padding-bottom: 20px;
+    width: 180px;
+    max-width: 180px;
+}
+
+.footersection h3 {
+    font-size: 15px;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    padding-bottom: 15px;
+}
+
+.footersection p {
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+.credits {
+    text-align: left;
+    margin-left: 0px;
+    min-height: 200px;
+    width: 95%;
+    border-left: solid 2px white;
+    padding-left: 25px;
+    align-content: center;
+    text-transform: uppercase;
+}
+
+.credits p {
+    padding-top: 10px;
+    font-size: 10px;
+}
+
+.credits p>a {
+    color: blue;
+}
+
+.credits p>b {
+    font-size: small;
+    text-decoration: underline;
+}
+
+.credits p:last-child {
+    padding-top: 10px;
+}
+
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
