@@ -9,6 +9,11 @@
 body {
     background-color: rgb(222, 215, 215);
     width: 100%;
+    overflow-x: hidden;
+}
+
+#menubar {
+    display: none;
 }
 
 header,
@@ -47,7 +52,7 @@ header {
 
 nav {
     display: flex;
-    background-color: rgb(106, 249, 249);
+    background-color: rgb(219, 247, 245);
     align-items: center;
     min-height: 50px;
     border-top: 2px solid black;
@@ -150,7 +155,7 @@ section {
 .bluediv{
     height: 50px;
     width: 100%;
-    background-color: rgb(106, 249, 249);
+    background-color: rgb(219, 247, 245);
     border-top: solid 2px black;
     border-bottom: solid 2px black;
 }
@@ -231,4 +236,89 @@ footer {
     0%   { transform: translateY(0); }
     50%  { transform: translateY(-20px); }
     100% { transform: translateY(0); }
+}
+
+
+@media (max-width: 1026px) {
+
+    nav {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navitems{ 
+        display: none;
+    }
+
+    .displaymenu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+        padding-left: 20px;
+    }
+
+    .displaymenu .navlinks {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .displaymenu .rightnavcontents {
+        flex-direction: column;
+    }
+    .displaymenu .rightnavcontents button{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    #menubar {
+        text-align: right;
+        display: block;
+        position: absolute;
+        right: 2%;
+        padding-left: 20px;
+        font-size: 25px;
+        padding-top: 10px;
+    }
+
+}
+
+@media (max-width: 823px) {
+
+    .titletext,
+    .titleimgright {
+        display: none;
+    }
+
+    .titleimgleft {
+        justify-content: center;
+        margin: auto;
+    }
+
+    .footerdiv {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footercontents {
+        justify-content: flex-start;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .footersection {
+        padding-bottom: 30px;
+        width: 180px;
+        max-width: 180px;
+    }
+    
+    .credits {
+        margin: 0;
+        border-left: none;
+        border-top: solid 2px white;
+        padding: 0;
+    }
+
 }
